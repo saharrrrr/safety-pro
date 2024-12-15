@@ -1,0 +1,26 @@
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    top: 0;
+    margin-top: 0;
+}
+.nav-logo img {
+    max-height: 50px;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-list li {
+    margin-left: 20px;
+    margin-right: 25px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
