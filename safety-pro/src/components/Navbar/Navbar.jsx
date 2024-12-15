@@ -1,4 +1,4 @@
-
+import wlogo from '../../assets/white-logo.png'
 import logo from "../../assets/colored-logo.png"
 import "./Navbar.css"
 
@@ -6,7 +6,7 @@ import "./Navbar.css"
   return (
     <div className='nav'>
         <div className="nav-logo">
-            <img src={logo}/>
+            <img src={wlogo}/>
         </div>
         <ul className="nav-list">
         <li><a href="/">About us</a></li>
