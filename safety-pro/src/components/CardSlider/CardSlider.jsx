@@ -1,10 +1,11 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+
+import "./CardSlider.css"
 
 import service1 from "../../assets/service1.png"
 import service2 from "../../assets/service2.png"
@@ -15,7 +16,7 @@ import service6 from "../../assets/service6.png"
 import service7 from "../../assets/service7.png"
 
 
-function CardSlider() {
+const CardSlider = () => {
     const cards = [
         {
             id:1,
@@ -81,12 +82,12 @@ function CardSlider() {
         }}
       >
         {cards.map((card) =>(
-            <SwiperSlide key={cards.id}>
+            <SwiperSlide key={card.id}>
                 <div className="card">
-                    <img src={cards.img} alt={cards.title}/>
+                    <img src={card.img} alt={cards.title}/>
                     <div className="card-content">
-                        <h3>{cards.title}</h3>
-                        <p>{cards.description}</p>
+                        <h3>{card.title}</h3>
+                        <p>{card.description}</p>
                     </div>
                 </div>
             </SwiperSlide>

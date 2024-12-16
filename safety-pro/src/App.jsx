@@ -1,9 +1,14 @@
+// import React from 'react'
+import CardSlider from './components/CardSlider/CardSlider'
 import Hero from './components/Hero/Hero'
-import Navbar from './components/Navbar/Navbar'
+import TestSlider from './TestSlider'
 
 const App = () => {
   return (
-    <div><Hero /></div>
+    <div>
+      <Hero />
+      <CardSlider />
+    </div>
   )
 }
 
