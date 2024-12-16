@@ -3,7 +3,7 @@
   }
 /* Container styling */
 .container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding: 20px;
   }
@@ -15,17 +15,22 @@
     color: #ff3000;
     font-size: 40px;
     margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ff3000;
+  
   }
   
   /* Card styling */
   .card {
     border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     text-align: center;
     overflow: hidden;
-    background-color: #f5f0f0;
+    /* background-color: #f5f0f0; */
+    /* background: url(../../assets/grey-shape-01.png) ; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 20px;
+    
   }
   
   .card:hover {
@@ -38,7 +43,7 @@
   /* Image styling */
   .card img {
     padding-top: 20px;
-    width: 75%;
+    width: 70%;
     height: auto;
     transition: transform 0.3s ease;
   }
@@ -50,12 +55,12 @@
   
   .card-content h3 {
     margin: 10px 0;
-    font-size: 25px;
+    font-size: 20px;
     color: #ff3000;
   }
   
   .card-content p {
-    font-size: 17px;
+    font-size: 15px;
     color: #000;
   }
   .swiper-scrollbar {

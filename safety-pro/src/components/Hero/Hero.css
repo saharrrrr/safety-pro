@@ -16,7 +16,9 @@
 .container {
     margin-left: 25px; /* Adjust spacing as needed */
 }
-
+.hero-content {
+    margin-top: 200px;
+}
 .hero-content h1 {
     font-size: 40px;
     color: rgb(255, 91, 59);
