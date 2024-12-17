@@ -1,49 +1,68 @@
 :root {
-    --swiper-theme-color: #ff3000; /* Set your desired theme color */
-  }
-/* Container styling */
+    --swiper-theme-color: #ff5b3b;}
+/* Main container */
 .container {
     width: 95%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
+    height: 100vh;
+    padding-bottom: 20px;
   }
   
   /* Header styling */
   .card-header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     color: #ff3000;
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #ff3000;
+    /* height: 20%; */
+    /* border-bottom: 2px solid #ff3000; */
+  }
   
+  /* Card section with background image */
+  .card-section {
+    background-image: url("../../assets/grey-shape-01.png"); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0; /* Add padding around the cards */
+    /* border-radius: 20px; Optional: Rounded corners */
+    height: auto;
+    /* margin: 20px; */
+    padding-bottom: 5px;
+    /* overflow: visible; */
   }
   
   /* Card styling */
   .card {
     border-radius: 20px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     text-align: center;
     overflow: hidden;
-    /* background-color: #f5f0f0; */
-    /* background: url(../../assets/grey-shape-01.png) ; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 20px;
-    
+    margin: 10px;
+    height: 90%;
+    /* margin-bottom: 5px;
+    padding-bottom: 10px; */
   }
   
   .card:hover {
-    transform: scale(1.1); /* Enlarges the card on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    margin: 5px;
-    border-radius: 20px;
+    transform: scale(1.1);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+  }
+  .card-num {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ff5b3b;
+    padding-bottom: 20px;
+
   }
   
   /* Image styling */
   .card img {
     padding-top: 20px;
-    width: 70%;
+    width: 50%;
     height: auto;
     transition: transform 0.3s ease;
   }
@@ -55,15 +74,13 @@
   
   .card-content h3 {
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 15px;
     color: #ff3000;
   }
   
   .card-content p {
-    font-size: 15px;
+    font-size: 13px;
     color: #000;
-  }
-  .swiper-scrollbar {
-    display: none; /* Completely hides the scrollbar */
+    margin-bottom: 5px;
   }
   

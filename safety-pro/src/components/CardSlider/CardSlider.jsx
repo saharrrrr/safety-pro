@@ -69,31 +69,35 @@ const CardSlider = () => {
   return (
     <div className="container">
       <h1 className="card-header">Our Services</h1>
-      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={20}
-        slidesPerView={3}
-        navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true}}
-        breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-      >
-        {cards.map((card) => (
-          <SwiperSlide key={card.id}>
-            <div className="card">
-              <img src={card.img} alt={card.title} />
-              <div className="card-content">
-                <h3>{card.title}</h3>
-                <p>{card.description}</p>
+      {/* New wrapper with background */}
+      <div className="card-section">
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={20}
+          slidesPerView={3}
+          navigation
+        //   pagination={{ clickable: true }}
+        //   scrollbar={{ draggable: true }}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {cards.map((card) => (
+            <SwiperSlide key={card.id}>
+              <div className="card">
+                <h1 className="card-num">{card.id}</h1>
+                <img src={card.img} alt={card.title} />
+                <div className="card-content">
+                  <h3>{card.title}</h3>
+                  <p>{card.description}</p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

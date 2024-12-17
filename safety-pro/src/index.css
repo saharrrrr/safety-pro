@@ -1,3 +1,6 @@
+:root {
+    --swiper-theme-color: #ff5b3b;
+}
 /* Reset margins and paddings */
 html, body {
     margin: 0;
