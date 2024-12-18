@@ -17,13 +17,17 @@
     margin-left: 25px; /* Adjust spacing as needed */
 }
 .hero-content {
-    margin-top: 200px;
+    margin-top: 170px;
 }
 .hero-content h1 {
-    font-size: 40px;
-    color: rgb(255, 91, 59);
+    font-size: 70px;
+    color: #ff5b3b;
 }
-
+.hero-content h2 {
+    font-size: 40px;
+    color: #ff5b3b;
+    margin-top: 20px;
+}
 .hero-content p {
     font-size: 25px;
     color: #fff;

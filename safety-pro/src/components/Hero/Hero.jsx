@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="container">
       <div className="hero-content">
         <h1>Safety Pro </h1>
-        <h1>Your Trusted Partner in Fire Safety.</h1>
+        <h2>Your Trusted Partner in Fire Safety.</h2>
         <p>
           Protecting homes, businesses, and communities from fire hazards.
         </p>

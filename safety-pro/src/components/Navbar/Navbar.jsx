@@ -8,18 +8,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -29,10 +23,10 @@ const Navbar = () => {
       </div>
       <ul className="nav-list">
         <li><a href="/">About us</a></li>
-        <li><a href="/about">Services</a></li>
-        <li><a href="/about">Projects</a></li>
-        <li><a href="/about">Safety equipments</a></li>
-        <li><a href="/about">Partners</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/equipments">Safety Equipments</a></li>
+        <li><a href="/partners">Partners</a></li>
         <li><a href="/contact">Contact us</a></li>
       </ul>
     </div>

@@ -1,8 +1,10 @@
+@import './font.css';
 :root {
     --swiper-theme-color: #ff5b3b;
 }
 /* Reset margins and paddings */
 html, body {
+    font-family: 'cocon-next';
     margin: 0;
     padding: 0;
     width: 100%;
