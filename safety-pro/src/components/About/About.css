@@ -26,7 +26,7 @@
     text-decoration: underline;
     text-decoration-color: #ff5b3b;
     text-decoration-thickness: 3px;
-    text-underline-offset: 3px;
+    text-underline-offset: 8px;
 }
 
 .content {
@@ -40,9 +40,10 @@
 .content p {
     font-size: 25px;
     padding: 10px 25px;
-    width: 900px;
+    /* width: 900px; */
     word-wrap: break-word;
 }
 .content img {
-    width: 200px;
+    width: 250px;
+    height: 250px;
 }
