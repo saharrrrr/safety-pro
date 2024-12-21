@@ -6,8 +6,8 @@
     position: fixed;
     top: 3px;
     z-index: 9999;
-    background-color: transparent;
-    border-bottom: 0.5px solid #fff;
+    background-color: rgba(251, 225, 220, 0.5);
+    /* border-bottom: 0.5px solid #fff; */
 }
 
 
@@ -39,8 +39,9 @@
 }
 .nav-list a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 20px;
+    font-weight: 600;
 }
 .nav-list a:hover {
     background: linear-gradient(to right, #fb8a24, #d61439);
