@@ -6,20 +6,25 @@ import "./Navbar.css";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
+  const handleScroll = () => {
+    const isScrolled = window.scrollY > 50;
+    console.log("Scroll position:", window.scrollY); // Debugging log
+    setScrolled(isScrolled);
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    console.log("Scrolled state:", scrolled); // Debugging log
+  }, [scrolled]);
 
   return (
     <div className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-logo">
-        <img src={scrolled ? wlogo : logo} alt="Logo" />
+        <img src={scrolled ? logo : wlogo} alt="Logo" />
       </div>
       <ul className="nav-list">
         <li><a href="/">About us</a></li>

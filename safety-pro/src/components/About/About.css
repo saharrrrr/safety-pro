@@ -5,10 +5,10 @@
     background-size: cover;
     background-position: center center;
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 40px 20px ;
     /* justify-content: center; */
 }
 .about-conent {
@@ -19,10 +19,10 @@
     padding: 60px 35px;
 }
 .about-header {
-    font-size: 40px;
+    font-size: 20px;
     color: #ff5b3b;
     align-items: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-decoration: underline;
     text-decoration-color: #ff5b3b;
     text-decoration-thickness: 3px;
