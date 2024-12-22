@@ -2,7 +2,7 @@
     background-image: url(../../assets/background.jpg);
     background-size: cover;
     background-position: center center;
-    min-height: 100vh; /* Full screen height */
+    height: 100vh; /* Full screen height */
     width: 100%; /* Full width */
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
     margin-left: 25px; /* Adjust spacing as needed */
 }
 .hero-content {
-    margin-top: 170px;
+    margin-top: 50px;
 }
 .hero-content h1 {
     font-size: 70px;
@@ -26,7 +26,7 @@
 .hero-content h2 {
     font-size: 40px;
     color: #ff5b3b;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .hero-content p {
     font-size: 25px;
