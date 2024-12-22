@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-logo">
-        <img src={scrolled ? logo : wlogo} alt="Logo" />
+        <img src={scrolled ? wlogo : logo} alt="Logo" />
       </div>
       <ul className="nav-list">
         <li><a href="/">About us</a></li>
