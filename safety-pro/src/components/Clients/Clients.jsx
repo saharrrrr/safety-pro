@@ -3,7 +3,12 @@ import './Clients.css'
 
 const Clients = () => {
   return (
-    <div className=''></div>
+    <div className='container'>
+        <header className="header">Our Clients</header>
+        <div className="clients-logo">
+            <img/>
+        </div>
+    </div>
   )
 }
 
