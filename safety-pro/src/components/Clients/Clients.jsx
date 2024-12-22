@@ -12,7 +12,7 @@ import image8 from './logos/obied.jpg'
 import image9 from './logos/spacetoon.png'
 import image10 from './logos/lulu.png'
 import image11 from './logos/tamimi.png'
-import image12 from './logos/spacetoon.png' 
+import image12 from './logos/dariea-01.png' 
 import image13 from './logos/saud.jpg'
 import image14 from './logos/tejoury.png'
 import image15 from './logos/saudi.jpg'
@@ -30,11 +30,10 @@ import image26 from './logos/nadeg.png'
 import image27 from './logos/fanar.png'
 import image28 from './logos/enoc.png'
 import image29 from './logos/art.jpg'
-import image30 from './logos/chemical.png'
-import image31 from './logos/java.png'
-import image32 from './logos/pepsi.png'
-import image33 from './logos/ama.png'
-import image34 from './logos/dariea-01.png'
+import image30 from './logos/java.png'
+import image31 from './logos/pepsi.png'
+import image32 from './logos/ama.png'
+
 
 
 const Clients = () => {
@@ -135,12 +134,6 @@ const Clients = () => {
         },
         {id : 32,
         image: image32
-        },
-        {id : 33,
-        image: image33
-        },
-        {id : 34,
-        image: image34
         },
     ];
 

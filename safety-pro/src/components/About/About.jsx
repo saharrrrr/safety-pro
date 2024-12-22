@@ -6,11 +6,11 @@ import './About.css';
 const About = () => {
   return (
     <div className='about-container'>
-      <Helmet>
+      {/* <Helmet>
         <title>About Us - Safety Pro</title>
         <meta name="description" content="Learn more about Safety Pro, a leading fire safety and prevention company providing comprehensive solutions for safety and fire protection." />
         <meta name="keywords" content="fire safety, fire prevention, safety solutions, fire protection" />
-      </Helmet>
+      </Helmet> */}
       <header className="about-header">
         <h1>About Us</h1>
       </header>
