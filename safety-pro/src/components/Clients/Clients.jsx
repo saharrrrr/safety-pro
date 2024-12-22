@@ -19,7 +19,7 @@ import image15 from './logos/saudi.jpg'
 import image16 from './logos/rabiah.jpg'
 import image17 from './logos/petromin.png'
 import image18 from './logos/yamamah.jpg'
-import image19 from './logos/munif.png'
+import image19 from './logos/almunif.png'
 import image20 from './logos/jazera.jpg'
 import image21 from './logos/tawuniya.png'
 import image22 from './logos/golds.png'
@@ -34,6 +34,7 @@ import image30 from './logos/chemical.png'
 import image31 from './logos/java.png'
 import image32 from './logos/pepsi.png'
 import image33 from './logos/ama.png'
+import image34 from './logos/dariea-01.png'
 
 
 const Clients = () => {
@@ -137,6 +138,9 @@ const Clients = () => {
         },
         {id : 33,
         image: image33
+        },
+        {id : 34,
+        image: image34
         },
     ];
 
