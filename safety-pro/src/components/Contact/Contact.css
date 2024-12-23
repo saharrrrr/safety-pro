@@ -1,0 +1,107 @@
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999; 
+}
+
+/* input:not(:placeholder-shown), textarea:not(:placeholder-shown) {
+    background-color: white; 
+} */
+
+
+button {
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: #ff5b3b;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    /* background-color: #ff7b5b; */
+    font-size: 20px;
+}
+.icons-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.icons-group h2 {
+    display: flex;
+    align-self: flex-start;
+    font-size: 40px;
+    /* margin-bottom: 10px; */
+    color: #ff5b3b;
+    margin-left: 15px;
+}
+
+.social-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 10px auto;
+}
+
+.social-icon svg {
+    margin-right: 15px; /* Add padding between the icon and the text */
+}
+
+.social-icon a {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    margin-top: 20px;
+}
+.social-media a {
+    font-size: 25px;
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px;
+}
