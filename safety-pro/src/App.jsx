@@ -18,7 +18,7 @@ const App = () => {
       <section id="services">
         <Services /> 
       </section>
-      <section id="projects">
+      <section id="clients">
         <Clients />
       </section>
       <section id="partners">

@@ -52,6 +52,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+    }
     .clients-container {
         grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
         margin: 10px;

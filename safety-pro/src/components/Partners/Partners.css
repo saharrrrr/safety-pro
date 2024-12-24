@@ -50,3 +50,20 @@
     top: 0;
     left: 0;
 }
+@media screen and (max-width: 768px) {
+    .partners {
+        height: auto;
+    }
+    .partners-container {
+        grid-template-columns: repeat(4, 1fr);
+        /* margin: 10px; */
+    }
+    .partner-image {
+        width: 65px;
+        height: 65px;
+    }
+    .header {
+        font-size: 1.5rem;
+    }
+    
+}
