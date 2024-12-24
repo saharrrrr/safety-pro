@@ -40,6 +40,23 @@
     overflow: hidden;
     cursor: pointer;
   }
+  @media screen and (max-width: 768px) {
+    .slider-container {
+      height: 100%;
+      margin-top: 15px;
+    } 
+    .slide-container {
+      width: 230px;
+      height: 320px;
+    }
+    .slide-title {
+      font-size: 1.3rem;
+      color: #ff5b3b;
+    }
+    .header {
+      font-size: 1.5rem;
+    }
+  }
   
   .slide-background {
     background-position: center;
