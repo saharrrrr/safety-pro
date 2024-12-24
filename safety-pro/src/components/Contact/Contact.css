@@ -105,3 +105,62 @@ button:hover {
     text-decoration: none;
     padding: 5px;
 }
+
+.social-media a:hover {
+    color: #ff5b3b;
+}
+
+/* Add Media quieries to make it resbonsive */
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+    }
+    form {
+        width: 100%;
+        max-width: 350px;
+        padding: 10px 20px;
+    }
+    .icons-group h2 {
+        font-size: 25px;
+        margin-left: 20px;
+        align-self: flex-start;
+        text-decoration: underline;
+        text-decoration-color: #ff5b3b;
+        text-decoration-thickness: 4px;
+        text-underline-offset: 8px;
+        padding: 8px;
+    }
+    .icons-group {
+        width: 100%;
+    }
+    .social-icon {
+        width: 100%;
+    }
+    .social-icon a {
+        margin: 10px;
+        font-size: 17px !important;
+    }
+    .social-icon svg {
+        margin-right: 10px;
+        font-size: 25px !important;
+    }
+    .social-media {
+        display: flex;
+        justify-content: center;
+        color: #ffbe7d;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .social-media a {
+        font-size: 15px !important;
+        color: #ffbe7d;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .social-media svg {
+        font-size: 15px !important;
+    } 
+}

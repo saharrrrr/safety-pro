@@ -64,10 +64,10 @@ function Contact() {
                     <a href="https://goo.gl/maps/"><FontAwesomeIcon icon={faLocationDot} bounce style={{color: "#ffbe7d", fontSize: "60px"}} /> Address</a>
                 </div>
                 <div className="social-media">
-                    <a href="https://www.facebook.com/"><FaFacebook style={{fontSize: "24px"}} /></a>
-                    <a href="https://www.instagram.com/"><FaInstagram style={{fontSize: "24px"}} /></a>
-                    <a href="https://www.twitter.com/"><FaTwitter style={{fontSize: "24px"}} /></a>
-                    <a href="https://www.linkedin.com/"><FaLinkedin style={{fontSize: "24px"}} /> </a>
+                    <a href="https://www.facebook.com/"><FaFacebook style={{color: "#ffbe7d", fontSize: "24px"}} /></a>
+                    <a href="https://www.instagram.com/"><FaInstagram style={{color: "#ffbe7d", fontSize: "24px"}} /></a>
+                    <a href="https://www.twitter.com/"><FaTwitter style={{color: "#ffbe7d", fontSize: "24px"}} /></a>
+                    <a href="https://www.linkedin.com/"><FaLinkedin style={{color: "#ffbe7d", fontSize: "24px"}} /> </a>
                 </div>
             </div>
         </div>
