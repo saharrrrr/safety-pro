@@ -1,17 +1,18 @@
-// import React from 'react'
+import Hero from './components/Hero/Hero'
 import About from './components/About/About'
-import CardSlider from './components/CardSlider/CardSlider'
+import Services from './components/Services/Services'
 import Clients from './components/Clients/Clients'
+import CardSlider from './components/CardSlider/CardSlider'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
-import Hero from './components/Hero/Hero'
-// import TestSlider from './TestSlider'
+
 
 const App = () => {
   return (
     <div>
       <Hero />
       <About />
+      <Services /> 
       <Clients />
       <CardSlider />
       <Contact />
