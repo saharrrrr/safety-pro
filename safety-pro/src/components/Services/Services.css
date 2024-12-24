@@ -10,7 +10,7 @@
     color: #ff5b3b;
     align-self: flex-start;
     text-decoration: underline;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-decoration-color: #ff5b3b;
     text-decoration-thickness: 4px;
     text-underline-offset: 10px;
@@ -19,6 +19,7 @@
 
   .swiper-container {
     max-width: 90%;
+    margin-top: 15px;
     @media (min-width: 768px) {
       max-width: 80%;
     }

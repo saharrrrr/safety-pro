@@ -60,7 +60,7 @@ function Services() {
             breakpoints={{
                 640: {
                     slidesPerView: 1,
-                    spaceBetween: 20,
+                    spaceBetween: 50,
                 },
                 768: {
                     slidesPerView: 2,
@@ -68,7 +68,7 @@ function Services() {
                 },
                 1024: {
                     slidesPerView: 3,
-                    spaceBetween: 30,
+                    spaceBetween: 25,
                 },
             }
         }>
