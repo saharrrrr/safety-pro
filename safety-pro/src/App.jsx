@@ -5,6 +5,7 @@ import Clients from './components/Clients/Clients'
 import CardSlider from './components/CardSlider/CardSlider'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Partners from './components/Partners/Partners'
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <About />
       <Services /> 
       <Clients />
+      <Partners />
       <CardSlider />
       <Contact />
       <Footer />
