@@ -50,3 +50,19 @@
     top: 0;
     left: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .clients-container {
+        grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+        margin: 10px;
+    }
+    .clients-logo {
+        width: 65px;
+        height: 65px;
+    }
+    .header {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    
+}
