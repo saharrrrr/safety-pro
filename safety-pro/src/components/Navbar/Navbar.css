@@ -29,6 +29,7 @@
     display: none;
     font-size: 24px;
     cursor: pointer;
+    color: #ff5b3b;
   }
 
 .nav.scrolled .nav-logo img {
@@ -85,6 +86,7 @@
     }
     .nav-menu-icon {
         display: block;
+        color: #ff5b3b;
     }
     .nav-logo img {
         height: 50px;
