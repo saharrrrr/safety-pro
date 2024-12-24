@@ -11,13 +11,23 @@ import Partners from './components/Partners/Partners'
 const App = () => {
   return (
     <div>
-      <Hero />
-      <About />
-      <Services /> 
-      <Clients />
-      <Partners />
+        <Hero />
+      <section id="about">
+        <About />
+      </section>
+      <section id="services">
+        <Services /> 
+      </section>
+      <section id="projects">
+        <Clients />
+      </section>
+      <section id="partners">
+        <Partners />
+      </section>
       {/* <CardSlider /> */}
-      <Contact />
+      <section id="contact">
+        <Contact />
+      </section>
       <Footer />
     </div>
   )

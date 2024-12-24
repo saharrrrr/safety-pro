@@ -27,12 +27,12 @@ const Navbar = () => {
         <img src={scrolled ? wlogo : logo} alt="Logo" />
       </div>
       <ul className="nav-list">
-        <li><a href="/">About us</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/projects">Clients</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Clients</a></li>
         {/* <li><a href="/equipments">Safety Equipments</a></li> */}
-        <li><a href="/partners">Partners</a></li>
-        <li><a href="/contact">Contact us</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#contact">Contact us</a></li>
       </ul>
     </div>
   );
