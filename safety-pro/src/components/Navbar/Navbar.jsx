@@ -38,7 +38,7 @@ const Navbar = () => {
       <ul className= {`nav-list ${menuOpen ? "open" : ""}`}>
         <li><a href="#about">About us</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Clients</a></li>
+        <li><a href="#clients">Clients</a></li>
         {/* <li><a href="/equipments">Safety Equipments</a></li> */}
         <li><a href="#partners">Partners</a></li>
         <li><a href="#contact">Contact us</a></li>
