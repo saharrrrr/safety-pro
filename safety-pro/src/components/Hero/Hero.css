@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center center;
     height: 100vh; /* Full screen height */
-    width: 100%; /* Full width */
+    width: 100vw; /* Full width */
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,7 +14,8 @@
 }
 
 .container {
-    margin-left: 25px; /* Adjust spacing as needed */
+    margin-left: 25px; 
+    background-color: none;/* Adjust spacing as needed */
 }
 .hero-content {
     margin-top: 50px;
