@@ -27,7 +27,7 @@
   
   .slide-container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 6px;
     margin-bottom: 20px;
     position: relative;

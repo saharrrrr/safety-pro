@@ -2,35 +2,36 @@ import Hero from './components/Hero/Hero'
 import About from './components/About/About'
 import Services from './components/Services/Services'
 import Clients from './components/Clients/Clients'
-import CardSlider from './components/CardSlider/CardSlider'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import Partners from './components/Partners/Partners'
+import './App.css'
+
 
 
 const App = () => {
   return (
     <div>
         <Hero />
-      <section id="about">
+      <section id="about" >
         <About />
       </section>
-      <section id="services">
+      <section id="services" >
         <Services /> 
       </section>
-      <section id="clients">
+      <section id="clients" >
         <Clients />
       </section>
-      <section id="partners">
+      <section id="partners" >
         <Partners />
       </section>
-      {/* <CardSlider /> */}
-      <section id="contact">
+      <section id="contact" >
         <Contact />
       </section>
       <Footer />
     </div>
   )
 }
+
 
 export default App
