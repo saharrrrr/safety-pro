@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import './Partners.css'
 
 import partner1 from './logos/partner-01.png'
@@ -67,16 +68,57 @@ function Partners() {
         {id: 30, image: partner30},
         {id: 31, image: partner31},
     ]
-  return (
-    <div className='partners'>
-        <h1 className='header'>Our Partners</h1>
-        <div className='partners-container'>
-            {partnersData.map(partner => (
-                <img key={partner.id} src={partner.image} alt='partner' className='partner-image' />
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.2, // Delay between child animations
+          },
+        },
+      };
+    
+      // Child item animation variants
+      const itemVariants = {
+        hidden: { opacity: 0, y: 50 }, // Initial state
+        visible: { opacity: 1, y: 0 }, // Animate to
+      };
+    
+      return (
+        <div className="partners">
+          {/* Header Animation */}
+          <motion.h1
+            className="header"
+            initial={{ opacity: 0, y: -20 }} // Start state
+            whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
+            viewport={{ once: false, amount: 0.2 }} // Re-trigger when 20% of element is in view
+            transition={{ duration: 0.5 }} // Animation duration
+          >
+            Our Partners
+          </motion.h1>
+    
+          {/* Animated Grid Container */}
+          <motion.div
+            className="partners-container"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.2 }} // Trigger when 20% of the container is in view
+          >
+            {partnersData.map((partner) => (
+              <motion.img
+                key={partner.id}
+                src={partner.image}
+                alt="partner"
+                className="partner-image"
+                variants={itemVariants}
+                whileHover={{ scale: 1.1 }} // Interactive hover effect
+                transition={{ duration: 0.2 }} // Hover animation duration
+              />
             ))}
+          </motion.div>
         </div>
-    </div>
-  )
-}
-
+      );
+    }
+    
 export default Partners
