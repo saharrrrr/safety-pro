@@ -1,3 +1,4 @@
+import {React, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 import { RxArrowTopRight } from 'react-icons/rx';
@@ -9,41 +10,34 @@ import {
 } from 'react-icons/rx';
 import { motion } from 'framer-motion';
 import 'swiper/swiper-bundle.css';
-
-import service1 from '../../assets/service-1.jpg';
-import service2 from '../../assets/service-2.jpg';
-import service3 from '../../assets/service-3.jpg';
-import service4 from '../../assets/service-4.jpg';
-
 import './Services.css';
 
+
 function Services() {
-  const servicesData = [
-    {
-      icon: <RxCrop />,
-      title: "Fire System Services",
-      content: "We provide a wide range of fire system services including design, installation, and maintenance.",
-      backgroundImage: service1,
-    },
-    {
-      icon: <RxDesktop />,
-      title: "Maintenance Contracts",
-      content: "We offer maintenance contracts to ensure your fire systems are always in top condition.",
-      backgroundImage: service2,
-    },
-    {
-      icon: <RxPencil2 />,
-      title: "Certification",
-      content: "We provide certification services to ensure your fire systems are up to code.",
-      backgroundImage: service3,
-    },
-    {
-      icon: <RxRocket />,
-      title: "Safety Equipment",
-      content: "We offer a wide range of safety equipment to keep your property safe.",
-      backgroundImage: service4,
-    },
-  ];
+  const [servicesData, setServicesData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchedData = async () => {
+      try {
+        const response = await fetch('https://safetypro.com.sa/wp-json/custom/v1/services');
+        if (!response.ok) {
+          throw new Error('Something went wrong!');
+        }
+        const data = await response.json();
+        setServicesData(data);
+        setLoading(false);
+      }
+      catch (error) {
+        setError(error.message);
+        setLoading(false);
+      }
+    };
+
+    fetchedData();
+  }, []);
+
 
   return (
     <div className="slider-container">
