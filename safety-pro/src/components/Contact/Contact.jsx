@@ -2,19 +2,61 @@ import React, { useState } from 'react';
 import './Contact.css';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone} from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import Swal from 'sweetalert2';
 
 function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [status, setStatus] = useState(null);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(name, email, message);
+        setStatus(null);
+
+        try {
+            const response = await fetch('https://safetypro.com.sa/wp-json/custom/v1/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, message }),
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                setStatus({ type: 'success', message: result.success });
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Thank you for reaching out! Your message has been sent successfully. Our team will contact you as soon as possible.',
+                    icon: 'success',
+                    confirmButtonText: 'OK',
+                });
+                setName('');
+                setEmail('');
+                setMessage('');
+            } else {
+                setStatus({ type: 'error', message: result.error });
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Failed to send your message. Please try again later.',
+                    icon: 'error',
+                    confirmButtonText: 'OK',
+                });
+            }
+        } catch (error) {
+            setStatus({ type: 'error', message: 'Something went wrong!' });
+            Swal.fire({
+                title: 'Error!',
+                text: 'Something went wrong. Please check your connection and try again.',
+                icon: 'error',
+                confirmButtonText: 'OK',
+            });
+        }
     };
 
     return (
@@ -54,6 +96,12 @@ function Contact() {
                 </div>
                 <button type='submit'>Send Message</button>
             </form>
+
+            {status && (
+                <div className={`status-message ${status.type}`}>
+                    {status.message}
+                </div>
+            )}
 
             <div className="icons-group">
                  <h2>Get In Touch</h2>
