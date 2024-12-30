@@ -20,14 +20,14 @@ const About = () => {
         ref={contentRef}
         initial={{ opacity: 0, y: 50 }}
         animate={contentInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 1.2, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
       >
         <h1>About Us</h1>
         <motion.section
           className="content"
           initial={{ opacity: 0 }}
           animate={contentInView ? { opacity: 1 } : {}}
-          transition={{ delay: 1, duration: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
         >
           <p>
             We are a leading fire safety and prevention company providing comprehensive solutions 
@@ -52,7 +52,7 @@ const About = () => {
             alt="logo"
             initial={{ opacity: 0, rotate: -180 }}
             animate={imageInView ? { opacity: 1, rotate: 0 } : {}}
-            transition={{ duration: 1.4, ease: "easeInOut" }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
           />
         </div>
       </motion.div>

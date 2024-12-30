@@ -52,7 +52,7 @@ function Partners() {
             className="header"
             initial={{ opacity: 0, y: -20 }} // Start state
             whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
-            viewport={{ once: false, amount: 0.2 }} // Re-trigger when 20% of element is in view
+            viewport={{ once: true, amount: 0.2 }} // Re-trigger when 20% of element is in view
             transition={{ duration: 0.5 }} // Animation duration
           >
             Our Partners
@@ -64,7 +64,7 @@ function Partners() {
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }} // Trigger when 20% of the container is in view
+            viewport={{ once: true, amount: 0.2 }} // Trigger when 20% of the container is in view
           >
             {partners.map((partner) => (
               <motion.img
