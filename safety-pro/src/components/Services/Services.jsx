@@ -93,7 +93,7 @@ function Services() {
               >
                 <div
                   className="slide-background"
-                  style={{ backgroundImage: `url(${item.backgroundImage})` }}
+                  // style={{ backgroundImage: `url(${item.backgroundImage})` }}
                 />
                 <div className="slide-overlay" />
                 <div className="slide-content">
@@ -105,6 +105,13 @@ function Services() {
                   >
                     {item.icon}
                   </motion.div>
+                  <motion.img 
+                    src={item.backgroundImage}
+                    alt="image"
+                    className="img-container"
+                    whileHover={{ scale: 1.2, rotate: 15 }}
+                    transition={{ type: "spring", stiffness: 200 }}
+                  />
                   <motion.h1
                     className="slide-title"
                     initial={{ opacity: 0, y: 20 }}
@@ -120,6 +127,13 @@ function Services() {
                   >
                     {item.content}
                   </motion.p>
+                  <motion.button
+                  className='btn'
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    Learn More
+                  </motion.button>
                 </div>
                 {/* Arrow Bounce Animation */}
                 <motion.div
