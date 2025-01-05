@@ -6,6 +6,7 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import Partners from './components/Partners/Partners'
 import './App.css'
+import CounterUp from './components/CounterUp/CounterUp'
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
     <div>
         <Hero />
       <section id="about" >
+        <CounterUp />
         <About />
       </section>
       <section id="services" >
