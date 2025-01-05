@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(../../assets/background.jpg);
+    background-image: url(../../assets/background-fire.jpg);
     background-size: cover;
     background-position: center center;
     height: 100vh; /* Full screen height */
@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center content */
-    align-items: flex-start; /* Align content to the left */
+    align-items: center; /* Align content to the left */
     position: relative; /* Change from fixed to relative */
 }
 
@@ -18,20 +18,38 @@
     background-color: none;/* Adjust spacing as needed */
 }
 .hero-content {
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #fff2f073;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    /* margin-top: 50px; */
+    /* background-color: aliceblue; */
 }
 .hero-content h1 {
     font-size: 70px;
     color: #ff5b3b;
+    margin: 0;
 }
-.hero-content h2 {
+/* .hero-content h2 {
     font-size: 40px;
     color: #ff5b3b;
     margin-top: 10px;
-}
+} */
 .hero-content p {
     font-size: 25px;
     color: #fff;
+    
 }
 
 .button-group {
@@ -59,9 +77,9 @@
 }
 
 .btn-secondary {
-    border: 1px solid rgb(255, 91, 59);
+    /* border: 1px solid rgb(255, 91, 59); */
     color: #fff;
-    background-color: transparent;
+    background: linear-gradient(to right, #fb8a24, #d61439);
     border-radius: 20px;
     font-size: 15px;
     font-weight: 600;

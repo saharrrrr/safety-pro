@@ -1,0 +1,20 @@
+.Achievement-container{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ff5b3b;
+  text-decoration: underline;
+  text-decoration-color: #ff5b3b;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+
+}

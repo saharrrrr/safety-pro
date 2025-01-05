@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  /* background-color: #333; */
+  background-color: #f5d6c5f6;
   color: #fff;
   position: fixed;
   width: 100%;
@@ -48,7 +48,7 @@
 
 .nav-list a {
   text-decoration: none;
-  color: white; /* Ensure the text color is white */
+  color: black; /* Ensure the text color is white */
   font-size: 22px;
 }
 

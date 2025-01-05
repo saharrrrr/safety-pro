@@ -6,7 +6,7 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import Partners from './components/Partners/Partners'
 import './App.css'
-import CounterUp from './components/CounterUp/CounterUp'
+import Achievements from './components/Achievements/Achievements'
 
 
 
@@ -16,8 +16,8 @@ const App = () => {
   return (
     <div>
         <Hero />
+        <Achievements />
       <section id="about" >
-        <CounterUp />
         <About />
       </section>
       <section id="services" >
