@@ -65,7 +65,7 @@ function Services() {
           slidesPerView={1}
           freeMode={true}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 5000, disableOnInteraction: true }}
           breakpoints={{
             640: {
               slidesPerView: 1,
