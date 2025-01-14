@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import {FaBars, FaTimes} from "react-icons/fa";
+import { Link } from "react-router-dom"; // Import Link
+import { FaBars, FaTimes } from "react-icons/fa";
+
 import wlogo from "../../assets/white-logo.png";
 import logo from "../../assets/colored-logo.png";
 import "./Navbar.css";
@@ -10,7 +12,6 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const isScrolled = window.scrollY > 50;
-    console.log("Scroll position:", window.scrollY); // Debugging log
     setScrolled(isScrolled);
   };
 
@@ -19,10 +20,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    console.log("Scrolled state:", scrolled); // Debugging log
-  }, [scrolled]);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -30,18 +27,20 @@ const Navbar = () => {
   return (
     <div className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-logo">
-        <img src={scrolled ? wlogo : logo} alt="Logo" />
+        <Link to="/"> {/* Home link */}
+          <img src={scrolled ? wlogo : logo} alt="Logo" />
+        </Link>
       </div>
       <div className="nav-menu-icon" onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </div>
-      <ul className= {`nav-list ${menuOpen ? "open" : ""}`}>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#clients">Clients</a></li>
-        {/* <li><a href="/equipments">Safety Equipments</a></li> */}
-        <li><a href="#partners">Partners</a></li>
-        <li><a href="#contact">Contact us</a></li>
+      <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
+        <li><Link to="/" onClick={toggleMenu}>Home</Link></li> {/* Home link */}
+        <li><Link to="/about" onClick={toggleMenu}>About Us</Link></li>
+        <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>
+        <li><Link to="/clients" onClick={toggleMenu}>Clients</Link></li>
+        <li><Link to="/partners" onClick={toggleMenu}>Partners</Link></li>
+        <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
       </ul>
     </div>
   );

@@ -1,41 +1,33 @@
-import Hero from './components/Hero/Hero'
-import About from './components/About/About'
-import Services from './components/Services/Services'
-import Clients from './components/Clients/Clients'
-import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
-import Partners from './components/Partners/Partners'
-import './App.css'
-import Achievements from './components/Achievements/Achievements'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
+import Home from "./Home";
+import About from "./components/About/About";
+import Services from "./components/Services/Services";
+import Clients from "./components/Clients/Clients";
+import Partners from "./components/Partners/Partners";
+import Contact from "./components/Contact/Contact";
+
+import './App.css';
 
 const App = () => {
-
-  
   return (
-    <div>
-        <Hero />
-        <Achievements />
-      <section id="about" >
-        <About />
-      </section>
-      <section id="services" >
-        <Services /> 
-      </section>
-      <section id="clients" >
-        <Clients />
-      </section>
-      <section id="partners" >
-        <Partners />
-      </section>
-      <section id="contact" >
-        <Contact />
-      </section>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/clients" element={<Clients />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </div>
-  )
-}
+    </Router>
+  );
+};
 
-
-export default App
+export default App;
