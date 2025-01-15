@@ -12,12 +12,16 @@
   .stat-item {
     text-align: center;
   }
+  .stat-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
   
   .stat-number {
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
-    color: #ff5b3b;
+    color: #333;
   }
   
   .stat-label {
