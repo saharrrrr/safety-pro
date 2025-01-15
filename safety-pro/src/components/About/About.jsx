@@ -35,6 +35,14 @@ const About = () => {
             to protect lives and property.We are a leading fire safety and prevention company providing comprehensive solutions 
             to protect lives and property
           </p>
+        {/* </motion.section>
+        <motion.section
+          className="content-button"
+          initial={{ opacity: 0 }}
+          animate={contentInView ? { opacity: 1 } : {}}
+          transition={{ delay: 1, duration: 1 }}
+        > */}
+          <a href="/about">Learn More</a>
         </motion.section>
       </motion.div>
 
