@@ -6,15 +6,22 @@
     height: 100vh;
     background-color: #fff;
   }
-  .header {
-    color: #ff5b3b;
-    align-self: flex-start;
+  .header h1{
+    color: #fff;
+    border: 1px solid #ff5b3b;
+    /* align-self: center;
     text-decoration: underline;
     margin-bottom: 30px;
     text-decoration-color: #ff5b3b;
     text-decoration-thickness: 4px;
     text-underline-offset: 10px;
-    padding-left: 20px;
+    padding-left: 20px; */
+  }
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
   }
 
   .swiper-container {

@@ -49,6 +49,8 @@ function Services() {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         Our Services
+        <br />
+        <span className='description'>What We Offer</span>
       </motion.h1>
 
       {/* Swiper Animation */}
@@ -127,13 +129,7 @@ function Services() {
                   >
                     {item.content}
                   </motion.p>
-                  <motion.button
-                  className='btn'
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    Learn More
-                  </motion.button>
+                  
                 </div>
                 {/* Arrow Bounce Animation */}
                 <motion.div
@@ -148,6 +144,13 @@ function Services() {
           ))}
         </Swiper>
       </motion.div>
+      <motion.button
+          className='btn'
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.5 }}
+      >
+          Learn More
+      </motion.button>
     </div>
   );
 }
