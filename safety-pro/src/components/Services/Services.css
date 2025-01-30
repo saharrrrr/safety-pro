@@ -17,6 +17,11 @@
     text-underline-offset: 10px;
     padding-left: 20px; */
   }
+  .header span {
+    color: black;
+    text-decoration: none;
+    padding-top: 20px;
+  }
   .description {
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -29,6 +34,7 @@
     margin-top: 15px;
     @media (min-width: 768px) {
       max-width: 80%;
+      align-items:center ;
     }
   }
   
@@ -76,6 +82,9 @@
     }
     .header {
       font-size: 1.5rem;
+    }
+    .img-container {
+      height: 150px;
     }
   }
   
